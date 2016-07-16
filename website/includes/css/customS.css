@@ -1,0 +1,210 @@
+body {
+    padding-top: 50px;
+    background-color: white;
+    height: 100%;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+li.active{
+    border-bottom: 2px solid #EB0028;
+    font-family: sans-serif;
+}
+nav.navbar-fixed-top{
+    border-bottom: 3px solid #004591;
+    background-color: white;
+    max-width:  inherit;
+    margin: 0 auto;
+}
+p.about{
+	position: relative;
+	color: #004591;
+	float: left;
+}
+
+div.box{
+    max-width: 100%px;
+    align-content: center;
+}
+h2{
+    color: #004591;
+    border-bottom: 2px solid #EB0028;
+}
+
+div.container{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.item active{
+    align-self: center;
+}
+.carousel {
+  height: 400px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel.item {
+  height: 400px;
+  background-color: white;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    right: 35%;
+    height: 80%;
+    width: 30%;
+    background-color: white;   
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: #EB0028;
+;
+  border-color: #EB0028;
+  width: 30%;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #004591; /* IE8 proofing */
+  color: #004591;
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #EB0028;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #004591;
+  border-bottom-color: #EB0028;
+}
+.masthead-nav > li {
+	display: inline-flex;
+	text-decoration-color: #004591;
+	border-color: #EB0028 #EB0028 #FFFFFF
+}
+.masthead-nav > li + li {
+  margin-left: 30px;
+}
+.navbar-collapse > masthead-nav > li{
+    align-items: center;
+}
+#img-section{
+    position: relative;
+    float: left;
+    width:40%;
+    height: 150px;
+    padding: 10px;
+    margin: 5%;
+    border-bottom-color: #004591;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    
+}
+#secondary-navbar{
+    float: right;
+    background-color: white;
+}
+.empty-par{
+    float: right;
+}
+#shoulder{
+    width: 20%;
+    min-width: 0%;
+    height: 500px;
+    background-color: white;
+    padding: 1%;
+    border-color: #004591;
+    border-style: solid;
+    border-width: 2px;
+}
+#sub-shoulder{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2%;
+    border-bottom-color: #004591;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+#items-space{
+    position:relative;
+    width: 75%;
+    float:right;
+    border-style: solid;
+    border-color: #004591;
+    border-width: 1px;
+}
+.item-place{
+    float: left;
+    width: 33%;
+}
+
+li.notactive:hover{
+    border-bottom-color: #EB0028;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color:#004591;
+}
+b{
+ color: #004591;   
+}
+.subtitles{
+    color: #004591;
+}
+
+td.menuTable{
+    border: 2px solid #004591;
+    margin: 2px;
+}
+a.active{
+    color: #EB0028;
+}
+td{
+    border-color: 2px solid #004591;
+    margin: inherit;
+}
+.blueTitle{
+    color:#004591; 
+}
+#imgTot{
+    align-content: center;
+    max-width: 800px;
+}
+hr.blueLine{
+    color: #004591;
+}
+td.menuTable2{
+    border: 2px solid #004591;
+    background-color: white;
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+div.devices{
+ border-color: 2px solid #004591;
+}
+ul.highLights{
+font-size:15px;
+}

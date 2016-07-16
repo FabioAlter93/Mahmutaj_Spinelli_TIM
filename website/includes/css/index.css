@@ -1,0 +1,14 @@
+section .row img { 
+  width: 100%;
+}
+
+section .row{
+    margin-bottom: 70px;
+    margin-top: -20px;
+}
+.container{
+    width: 100%;
+    margin-top: 50px;
+}
+
+

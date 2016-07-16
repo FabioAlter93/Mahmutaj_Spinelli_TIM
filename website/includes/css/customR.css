@@ -1,0 +1,323 @@
+body {
+    padding-top: 50px;
+    background-color: white;
+    height: 100%;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+li.active {
+    border-bottom: 2px solid #EB0028;
+    font-family: sans-serif;
+}
+
+nav.navbar-fixed-top {
+    border-bottom: 3px solid #004591;
+    background-color: white;
+    max-width: inherit;
+    margin: 0 auto;
+}
+
+p.about {
+    position: relative;
+    color: #004591;
+    float: left;
+}
+
+div.box {
+    max-width: 100%px;
+    align-content: center;
+}
+
+h2 {
+    color: #004591;
+    border-bottom: 2px solid #EB0028;
+}
+
+h1,
+h4 {
+    color: #004591;
+    margin-bottom: 3%;
+}
+
+li {
+    color: #004591;
+}
+
+a {
+    color: #004591;
+}
+
+.solid-bar {
+    position: relative;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 5px;
+    background-color: #004591;
+}
+
+div.container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.container-banner {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    border: 3px solid #004591;
+}
+
+.container-banner-noborder {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.item active {
+    align-self: center;
+}
+
+.carousel {
+    height: 400px;
+    margin-bottom: 0px;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    margin-top: 3%;
+    margin-left: 33%;
+    margin-right: auto;
+    height: 400px;
+    background-color: white;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.3333333;
+    background-color: #004591;
+    border-color: #004591;
+}
+
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004591;
+    /* IE8 proofing */
+    color: #004591;
+    border-bottom: 2px solid transparent;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #EB0028;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #004591;
+    border-bottom-color: #EB0028;
+}
+
+.masthead-nav > li {
+    display: inline-flex;
+    text-decoration-color: #004591;
+    border-color: #EB0028 #EB0028 #FFFFFF
+}
+
+.masthead-nav > li + li {
+    margin-left: 30px;
+}
+
+.navbar-collapse > masthead-nav > li {
+    align-items: center;
+}
+
+.bottom-border-categories {
+    position: relative;
+    width: 70%;
+    padding: 5%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-bottom-color: #004591;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+}
+
+.img-responsive {
+    position: relative;
+    width: 100%;
+    border: 3px solid #004591;
+}
+
+.img-responsive-noborder {
+    position: relative;
+    width: 100%;
+}
+
+.img-responsive-categories {
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+
+.img-responsive-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.product {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    padding: 5%;
+}
+
+.service {
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+}
+
+a.service:hover {
+    color: #004591;
+}
+
+#secondary-navbar {
+    float: right;
+    background-color: white;
+}
+
+.empty-par {
+    float: right;
+}
+
+#shoulder {
+    width: 20%;
+    min-width: 0%;
+    height: 500px;
+    background-color: white;
+    padding: 1%;
+    border-color: #004591;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#sub-shoulder {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2%;
+    border-bottom-color: #004591;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+#items-space {
+    position: relative;
+    width: 75%;
+    float: right;
+    border-style: solid;
+    border-color: #004591;
+    border-width: 1px;
+}
+
+#item-place {
+    border-style: solid;
+    border-color: #004591;
+    border-width: 1px;
+    margin: 20px;
+    height: 300px;
+}
+
+#item-place img {
+    display: block;
+    margin: auto;
+}
+
+li.notactive:hover {
+    border-bottom-color: #EB0028;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #004591;
+}
+
+b {
+    color: #004591;
+}
+
+.subtitles {
+    color: #004591;
+}
+
+.footer .container {
+    background-color: gainsboro;
+    width: 100%;
+    display: block;
+}
+
+.footer {
+    bottom: 0px;
+    background-color: gainsboro;
+    width: 100%;
+    border-top-color: #004591;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+#small-item-place {
+    border-style: solid;
+    border-color: #004591;
+    border-width: 1px;
+    margin: 5px;
+    line-height: normal;
+    column-width: 2;
+    height: 95px;
+}
+
+#small-item-place img {
+    display: block;
+    margin: auto;
+    height: 90px;
+}
+
+#small-button {
+    max-width: 50%;
+}
+
+.formatted-text {
+    padding-left: 100px;
+}
+
+.active-subtitles {
+    color: #EB0028;
+}
+
+#price-place {
+	border: 2px solid red;
+    padding: 3%;
+}
