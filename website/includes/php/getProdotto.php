@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 
 $id = intval($_GET['id']);
 
-$mysqli = new mysqli("localhost", "root", "", "myTimDB");
+$mysqli = new mysqli("localhost", "root", "", "my_hypermediaproject");
 
 if (mysqli_connect_errno()) {    echo "Error to connect to DBMS: ".mysqli_connect_error();
     exit();
