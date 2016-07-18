@@ -7,7 +7,7 @@ function ready(){
         method: "POST",
         crossDomain: true, 
         
-        url: phpurl="includes/php/getAllCategorieProdotti.php",
+        url: phpurl="http://hypermediaproject.altervista.org/includes/php/getAllCategorieProdotti.php",
     
         async: true,
         data: {categorieProdotti:idCat},
@@ -35,8 +35,12 @@ function ready(){
                     }
                 
                 var urlCategoria = "ProdottiPerCategorie.html?idCat=" + categorieProdotti[i].id;
-                
-                
+
+              var imgTemp = document.createElement("img");
+              var urlImmagine = "Immagini/" + categorieProdotti[i].foto;
+              imgTemp.setAttribute('src', urlImmagine);
+              imgTemp.setAttribute("class", "img-responsive");
+
                 var nomeTemp = document.createElement("a");
                 nomeTemp.setAttribute('class', 'btn btn-primary btn-block');
                 nomeTemp.setAttribute("href", urlCategoria);
@@ -49,9 +53,14 @@ function ready(){
                 var categoriaPanel = document.createElement("div");
                 categoriaPanel.setAttribute("class", "panel");
                 categoriaPanel.setAttribute("id", "panel-category");
-              
+
+                categoriaPanel.appendChild(imgTemp);
                 categoriaPanel.appendChild(nomeTemp);
+
+
                 categoria.appendChild(categoriaPanel);
+
+
               
                 currrow.appendChild(categoria);
               

@@ -7,7 +7,7 @@ function ready(){
         method: "POST",
         crossDomain: true, 
         
-        url: phpurl="includes/php/getAllCategorieSmart.php",
+        url: phpurl="http://hypermediaproject.altervista.org/includes/php/getAllCategorieSmart.php",
     
         async: true,
         data: {categorieProdotti:idCat},
@@ -36,6 +36,12 @@ function ready(){
                 
                 var urlCategoria = "SmartPerCategorie.html?idCat=" +categorieProdotti[i].id;
 
+
+              var imgTemp = document.createElement("img");
+              var urlImmagine = "Immagini/" + categorieProdotti[i].foto;
+              imgTemp.setAttribute('src', urlImmagine);
+              imgTemp.setAttribute("class", "img-responsive");
+
                 
                 var nomeTemp = document.createElement("a");
                 nomeTemp.setAttribute('class', 'btn btn-primary btn-block');
@@ -51,6 +57,7 @@ function ready(){
                 categoriaPanel.setAttribute("class", "panel");
                 categoriaPanel.setAttribute("id", "panel-category");
 
+              categoriaPanel.appendChild(imgTemp);
                 categoriaPanel.appendChild(nomeTemp);
                 categoria.appendChild(categoriaPanel);
               

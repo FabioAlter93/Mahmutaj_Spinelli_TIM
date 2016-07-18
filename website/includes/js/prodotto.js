@@ -9,7 +9,7 @@ function ready(){
         method: "POST",          
         crossDomain: true, 
         
-        url: "includes/php/getProdotto.php?id="+myParam,
+        url: "http://hypermediaproject.altervista.org/includes/php/getProdotto.php?id="+myParam,
         async: true,
 
         data: {prodotto:idprodotti},        
@@ -55,10 +55,12 @@ function ready(){
 		method: "POST",
 		crossDomain: true,
         
-		url: "includes/php/getSmartLifeOfProdotto.php?id="+myParam,
+		url: "http://hypermediaproject.altervista.org/includes/php/getSmartLifeOfProdotto.php?id="+myParam,
         
 		data: {prodotto: idprodotti},
 		success: function (response) {
+
+		    console.log("success getSmartLifeOfProdotto  ");
         var prodotti = JSON.parse(response);
 
 			for (i = 0; i < prodotti.length; i++) {
@@ -68,7 +70,7 @@ function ready(){
             imgTemp.setAttribute('src', urlImmagine);
             imgTemp.setAttribute("class", "img-responsive");
                 
-            var urlDevice = "smartLifeProdotti.html?idp=" + prodotti[i].id;
+            var urlDevice = "SmartLifeProdotti.html?idp=" + prodotti[i].id;
                 
             var nomeTemp = document.createElement("a");
             nomeTemp.setAttribute("class", "btn btn-small btn-primary");
@@ -80,7 +82,9 @@ function ready(){
             smartlife.setAttribute("class", "col-sm-4 feature");
             smartlife.appendChild(imgTemp);
             smartlife.appendChild(nomeTemp);
-           
+
+            document.getElementById("prodotto-related").appendChild(smartlife);
+
 			}
 		},
 		error: function (request, error) {
@@ -92,7 +96,7 @@ $.ajax({
 		method: "POST",
 		crossDomain: true,
         
-		url: "includes/php/getAssistanceOfProdotto.php?id="+myParam,
+		url: "http://hypermediaproject.altervista.org/includes/php/getAssistanceOfProdotto.php?id="+myParam,
         
 		data: {prodotto: idprodotti},
 		success: function (response) {
@@ -101,7 +105,7 @@ $.ajax({
 			for (i = 0; i < prodotti.length; i++) {
                 
                 
-				var urlDevice = "assistanceProdotti.html?idp=" + prodotti[i].id;
+				var urlDevice = "AssistanceProdotti.html?idp=" + prodotti[i].id;
                 
 				var nomeTemp = document.createElement("a");
 				nomeTemp.setAttribute("href", urlDevice);
@@ -117,6 +121,8 @@ $.ajax({
                 
                 prodottoPanel.appendChild(nomeTemp);
                 prodotto.appendChild(prodottoPanel);
+
+                document.getElementById("assistance-related").appendChild(prodottoPanel);
 				
 				
 			}

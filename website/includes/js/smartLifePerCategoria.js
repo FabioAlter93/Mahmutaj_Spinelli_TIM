@@ -11,7 +11,7 @@ function ready(){
         method: "POST",
         crossDomain: true,
         
-        url: "includes/php/getSmartLifeCategoria.php?id="+myParam,
+        url: "http://hypermediaproject.altervista.org/includes/php/getSmartLifeCategoria.php?id="+myParam,
         async: true,
         
         data: {prodotti:idp},
@@ -22,7 +22,7 @@ function ready(){
             
             for(i=0;i<prodotti.length;i++) {
 
-                    var urlProdotto ="prodottoSmartLife.html?idp=" + prodotti[i].id;
+                    var urlProdotto ="SmartLifeProdotti.html?idp=" + prodotti[i].id;
                     
                     var imgTemp = document.createElement("img"); 
                     var urlImmagine = "Immagini/" + prodotti[i].foto;

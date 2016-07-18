@@ -9,7 +9,7 @@ function ready(){
         method: "POST",       
         crossDomain: true,
         
-        url: "includes/php/getSmartLife.php?id="+myParam,
+        url: "http://hypermediaproject.altervista.org/includes/php/getSmartLife.php?id="+myParam,
         async: true,
 
         data: {prodotto:idprodotti},        
@@ -54,7 +54,7 @@ $.ajax({
 		method: "POST",
 		crossDomain: true,
         
-		url: "includes/php/getDeviceOfSmartLife.php?id="+myParam,
+		url: "http://hypermediaproject.altervista.org/includes/php/getDeviceOfSmartLife.php?id="+myParam,
         
 		data: {prodotto: idprodotti},
 		success: function (response) {
@@ -66,7 +66,7 @@ $.ajax({
 				imgTemp.setAttribute('src', urlImmagine);
 				imgTemp.setAttribute("class", "img-responsive");
 				
-                var urlDevice = "deviceProdotti.html?idp=" + prodotti[i].id;
+                var urlDevice = "DeviceProdotti.html?idp=" + prodotti[i].id;
                 
 				var nomeTemp = document.createElement("a");
 				nomeTemp.setAttribute("class", "btn btn-small btn-primary");
@@ -79,6 +79,8 @@ $.ajax({
                 prodotto.setAttribute("id", "special-col");
 				prodotto.appendChild(imgTemp);
 				prodotto.appendChild(nomeTemp);
+
+                document.getElementById("prodotto-related").appendChild(prodotto);
                 
 			}
 		},

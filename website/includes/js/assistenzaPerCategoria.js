@@ -9,7 +9,7 @@ function ready(){
         method: "POST",
         crossDomain: true,
         
-        url: "includes/php/getAssistenzaCategoria.php?id="+myParam,
+        url: "http://hypermediaproject.altervista.org/includes/php/getAssistenzaCategoria.php?id="+myParam,
         
         async: true,
         data: {prodotti:idp},
