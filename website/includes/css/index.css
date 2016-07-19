@@ -8,7 +8,7 @@ section .row{
 }
 .container{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #spostati{
@@ -17,6 +17,12 @@ section .row{
     padding-bottom: 100px;
     padding-top: 50px;
 }
+
+.body {
+height: 100%;
+    margin-bottom: inherit;
+}
+
 #footerWrap{
-    margin-top: 150px;
+    margin-top: 80px;
 }
