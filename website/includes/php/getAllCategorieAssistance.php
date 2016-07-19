@@ -10,7 +10,7 @@ if (mysqli_connect_errno()) {    echo "Error to connect to DBMS: ".mysqli_connec
 }
 else {
     
-    $query ="SELECT nome, id FROM categorieAssistenza";
+    $query ="SELECT * FROM categorieAssistenza";
 
     $result = $mysqli->query($query);
     
