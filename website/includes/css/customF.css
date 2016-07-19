@@ -1,5 +1,5 @@
 body {
-    padding-top: 50px;
+    padding-top: 20px;
     background-color: white;
     height: 100%;
 }
@@ -44,24 +44,8 @@ div.container{
 .item active{
     align-self: center;
 }
-.carousel {
-  height: 400px;
-  margin-bottom: 0px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    margin-top: 3%;
-    margin-left: 33%;
-    margin-right: auto;
-    height: 400px;
-    background-color: white;
-    
-}
+
 .btn-lg,
 .btn-group-lg > .btn {
   display: block;
@@ -176,17 +160,7 @@ b{
     color: #004591;
 }
 
-.footer .container{
-    background-color: gainsboro;
-    width: 100%;
-    display: block;
-}
-.footer{
-    background-color: gainsboro;
-    width: 100%;
-    border-top-color: #004591;
-    border-top-style: solid;
-    border-top-width: 1px;
+
 }
 #small-item-place0{
     border-style: solid;
